@@ -16,6 +16,10 @@
   font-family: 'Alte Haas Grotesk';
 }
 
+html, body {
+  height: 100%;
+}
+
 div.website-header {
   background-color: #072b61;
 }
@@ -61,7 +65,14 @@ div.jumbotron-home p {
 
 div.website-content {
   background-color: #222;
+  min-height: calc(100% - 260px);
 }
+
+footer {
+  height: 160px;
+  background-color: #111;
+}
+
 
 div.website-content div.menu {
   background-color: #222;
@@ -115,13 +126,6 @@ div.website-content div.menu p.caption{
 
 div.website-content div.content {
   background-color: white;
-  min-height: 600px;
-}
-
-
-
-div.website-footer {
-  background-color: #111;
 }
 
 
@@ -134,4 +138,8 @@ a.btn {
 a.btn-primary {
   background-color: #0a57a4;
   border-color: #0a57a4;
+}
+
+div.next-prev-btns {
+  margin-bottom: 14px;
 }
